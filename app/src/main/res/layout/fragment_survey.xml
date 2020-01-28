@@ -13,21 +13,25 @@
         android:textColor="#FFFFFF"
         android:gravity="center"
         android:textSize="30dp"
+        android:textStyle="bold"
         />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="20dp">
+        android:layout_height="05dp"
+        android:gravity="bottom">
 
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_weight="3"
             app:srcCompat="@drawable/aroow"
             android:layout_gravity="bottom"
-            android:background="@drawable/aroow"
+            android:background="@drawable/line"
+            android:foregroundGravity="bottom"
+
 
             />
     </LinearLayout>
@@ -40,9 +44,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="Choose Nickname To Identify Yourself"
+            android:text="Choose Nickname"
             android:gravity="left"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textColor="@color/colorPrimary"
             android:layout_marginLeft="25dp">
 
@@ -54,12 +58,12 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="25dp">
-
-
-
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        app:boxBackgroundColor="@color/colorPrimary"
+        app:boxStrokeColor="@color/colorPrimary">
 
 
         <com.google.android.material.textfield.TextInputEditText
@@ -68,7 +72,7 @@
             android:layout_height="wrap_content"
             android:hint="Nickname"
             android:textColor="@color/colorPrimary"
-            android:textSize="20dp"/>
+            android:textSize="15dp"/>
 
 
 
@@ -84,10 +88,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Choose City Of You`re Interest"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textColor="@color/colorPrimary"
             android:layout_marginLeft="25dp"
-            android:gravity="bottom">
+            android:gravity="bottom"
+            android:textStyle="normal">
 
         </TextView>
 
@@ -120,7 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="Choose 1 or more Languages"
-            android:textSize="20dp"
+            android:textSize="15dp"
             android:textColor="@color/colorPrimary"
             android:layout_marginLeft="25dp"
             />
@@ -137,7 +142,7 @@
             android:text="Of You´re Interest:"
             android:textColor="@color/colorPrimary"
             android:layout_marginLeft="25dp"
-            android:textSize="20dp">
+            android:textSize="15dp">
 
         </TextView>
 
@@ -152,6 +157,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:drawable/btn_dropdown"
+            android:outlineAmbientShadowColor="@color/color2"
+            android:outlineSpotShadowColor="@color/color2"
             android:spinnerMode="dropdown"
             android:layout_marginLeft="25dp"
             android:layout_marginRight="40dp">
@@ -167,7 +174,7 @@
 
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/surveybutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -175,8 +182,9 @@
             android:layout_marginLeft="150dp"
             android:layout_marginRight="150dp"
             android:layout_gravity="center"
-            android:background="#CCCCCC"
-            android:textColor="@color/colorPrimary"/>
+            android:background="@drawable/sha_pes"
+            android:textColor="@color/colorPrimary"
+            android:onClick="navigate_to_matchroom"/>
     </LinearLayout>
 
     <LinearLayout

@@ -58,4 +58,28 @@
         do not hesitate to contact me at 24FriendTecServices@gmail.com.
 
     </string>
+
+    <string name="cityspinner">24Friend</string>
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="Cities">
+        <item>Downtown</item>
+        <item>NorthVancouver</item>
+        <item>Burnaby</item>
+        <item>Richmond</item>
+        <item>Surrey</item>
+        <item>NewwestMinster</item>
+    </string-array>
+
+    <string name="languagespinner">24Friend</string>
+    <string name="selected_item2">Selected item:</string>
+
+    <string-array name="Language">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+        <item>French</item>
+        <item>Hindi</item>
+    </string-array>
 </resources>
